@@ -1,5 +1,5 @@
 .section-header
-	padding-top: 49px
+	// padding-top: 49px
 	width: 100%
 	height: 750px
 	background-image: url("../img/bg-header.png")
@@ -7,11 +7,16 @@
 	background-position: center
 	background-size: cover
 
+.nav-wrap
+	width: 100%
+	position: fixed
+	background: linear-gradient(180deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0) 86%)
+	z-index: 10
+
 .nav
-	margin-bottom: 143px
-	position: relative
+	padding-top: 43px
 	display: flex
-	justify-content: flex-end
+	justify-content: space-between
 
 .nav-logo__link
 	text-transform: uppercase
@@ -19,12 +24,11 @@
 	font-family: 'Yeseva One', cursive
 	font-size: 36px
 	font-weight: 400
-	
 
 .nav-logo__link
-	position: absolute
-	top: -9px
-	left: 4px
+	position: relative
+	// top: -9px
+	// left: 4px
 	&:after
 		width: 154px
 		height: 92px
@@ -36,12 +40,19 @@
 	&:hover
 		transition: .2s
 		opacity: 0.7
+		color: #cc9900
 	&:active
 		opacity: 1
 		color: #f1f1f1
 
 .nav-menu
 	margin-right: 21px
+
+.nav-menu-item
+	margin-right: 20px
+	display: inline-block
+	&:last-child
+		margin-right: 0
 
 .nav-menu-soc
 	margin-right: 40px
@@ -53,26 +64,29 @@
 	font-family: 'Gentium Book Basic', serif
 	font-size: 21px
 	font-weight: 700
-	&:after
-		height: 6px
-		position: absolute
-		top: -49px
-		right: -13px
-		left: -13px
-		content: ""
-		opacity: 0
-		background-color: #fff
+	line-height: 36px
 	&:last-child
 		margin-right: 0
 	&:hover
 		color: #fbffd7
-		&:after
-			transition: .4s
-			opacity: 0.7
 	&:active
 		&:after
 			background-color: #5e984f
 
+.nav-menu-item--active
+	position: relative
+	color: #c9a131
+	.nav-menu__link
+		color: #cc9900
+	&:after
+		height: 6px
+		position: absolute
+		top: -43px
+		right: -13px
+		left: -13px
+		content: ""
+		background-color: #cc9900
+	
 .nav-menu-soc__link
 	margin-right: 15px
 	transition: .3s
@@ -85,10 +99,15 @@
 		color: lighten(#dab33e, 15%)
 
 .header-content
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
 	display: flex
 	align-items: center
 	flex-direction: column
 	justify-content: center
+	transform: translateY(50%)
 
 .header-content__title
 	margin-bottom: 101px

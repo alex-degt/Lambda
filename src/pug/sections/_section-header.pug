@@ -1,27 +1,37 @@
-header.section-header
+.nav-wrap
 	.container
-		.nav
+		nav.nav
 			.nav-logo
 				a(href="#!").nav-logo__link LAMBDA
-			.nav-menu
-				a(href="#!").nav-menu__link Home
-				a(href="#!").nav-menu__link About
-				a(href="#!").nav-menu__link Igredients
-				a(href="#!").nav-menu__link Menu
-				a(href="#!").nav-menu__link Reviews
-				a(href="#!").nav-menu__link Reservations
+			
+			ul.nav-menu#page-nav
+				li.nav-menu-item.nav-menu-item--active
+					a(href="#section-header").nav-menu__link Home
+				li.nav-menu-item
+					a(href="#section-about").nav-menu__link About
+				li.nav-menu-item
+					a(href="#section-ingredients").nav-menu__link Igredients
+				li.nav-menu-item
+					a(href="#section-menu").nav-menu__link Menu
+				li.nav-menu-item
+					a(href="#section-reviews").nav-menu__link Reviews
+				li.nav-menu-item
+					a(href="#section-reservation").nav-menu__link Reservations
 			.nav-menu-soc
-				a(href="#!").nav-menu-soc__link
+				a(href="https://twitter.com/" target="_blank").nav-menu-soc__link
 					i.fab.fa-twitter
-				a(href="#!").nav-menu-soc__link
+				a(href="https://www.youtube.com/" target="_blank").nav-menu-soc__link
 					i.fab.fa-youtube
-				a(href="#!").nav-menu-soc__link
+				a(href="https://www.facebook.com/" target="_blank").nav-menu-soc__link
 					i.fab.fa-facebook-f
+	
+header.section-header#section-header
+	.container
 		.header-content
 			h1.header-content__title
 				| the right ingredients for the right food
 			.header-content__buttons
-				a(href="#!").button.button--dark BOOK A TABLE
-				a(href="#!").button.button--white SEE THE MENU
+				a(href="#section-reservation").button.button--dark BOOK A TABLE
+				a(href="#section-menu").button.button--white SEE THE MENU
 
 

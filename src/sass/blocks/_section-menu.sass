@@ -1,0 +1,90 @@
+.section-menu
+	padding-top: 103px
+	padding-bottom: 94px
+	background-image: url("../img/pattern2.png")
+	background-repeat: repeat
+
+.special
+	position: relative
+	&:before
+		width: 69px
+		height: 22px
+		position: absolute
+		top: -29px
+		right: -15px
+		content: "Special"
+		text-align: center
+		color: #f8fafa
+		background-color: #c89f2d
+		font-family: 'Lato', sans-serif
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+	&:after
+		width: 455px
+		height: 79px
+		position: absolute
+		top: -7px
+		left: -12px
+		content: ""
+		border: 1px solid #c89f2d
+
+.menu-card-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-around
+
+.menu-card
+	margin-bottom: 64px
+	width: 50%
+	max-width: 430px
+	height: 100%
+	&:nth-child(3),
+	&:nth-child(4)
+		margin-bottom: 0
+
+.menu-card-title
+	margin-bottom: 69px
+	position: relative
+	&:after
+		width: 247px
+		height: 24px
+		position: absolute
+		bottom: -41px
+		left: 50%
+		content: ""
+		transform: translateX(-50%)
+		background-image: url("../img/divider-gold.png")
+
+.menu-item
+	margin-bottom: 33px
+	position: relative
+	&:last-child
+		margin-bottom: 0
+
+.menu-item__top
+	margin-bottom: 8px
+	padding-bottom: 8px
+	display: flex
+	justify-content: space-between
+	border-bottom: 1px solid #c89f2d
+
+.menu-item__title
+	color: #c89f2d
+	font-family: 'Yeseva One', cursive
+	font-size: 21px
+	font-weight: 400
+
+.menu-item__desc
+	color: #4c4c4c
+	font-family: 'Lato', sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 24px
+
+.menu-item__price
+	color: #c89f2d
+	font-family: 'Yeseva One', cursive
+	// font-weight: 800
+	font-size: 21px

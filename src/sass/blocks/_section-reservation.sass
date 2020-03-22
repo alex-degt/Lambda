@@ -1,0 +1,103 @@
+.section-reservation
+	padding-top: 100px
+	padding-bottom: 103px
+	background-image: url("../img/pattern.png")
+	background-repeat: repeat
+
+.reservation-wrap
+	display: flex
+	justify-content: flex-start
+
+.reservation-img
+	width: 50%
+	max-width: 610px
+	display: flex
+	justify-content: flex-end
+	img
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+
+.reservation
+	margin-left: 100px
+	width: 50%
+	max-width: 430px
+	display: flex
+	flex-direction: column
+
+.reservation__title
+	margin-bottom: 66px
+	position: relative
+	&:after
+		width: 247px
+		height: 24px
+		position: absolute
+		bottom: -41px
+		left: 50%
+		content: ""
+		transform: translateX(-50%)
+		background-image: url("../img/divider-gold.png")
+
+.reservation__desc
+	margin-bottom: 38px
+	text-align: center
+	color: #4c4c4c
+	font-family: 'Lato', sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 24px
+	p
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+
+.form
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+.form__label
+	margin-bottom: 22px
+	width: 46.5%
+	&:nth-child(3),
+	&:nth-child(4)
+		margin-bottom: 33px
+
+.form__label-title
+	margin-bottom: 6px
+	color: #c9a131
+	font-family: 'Open Sans', sans-serif
+	font-size: 14px
+	font-weight: 700
+
+.label-input
+	padding-left: 14px
+	width: 100%
+	height: 36px
+	font-family: 'Open Sans', sans-serif
+	font-size: 16px
+	&:focus
+		color: #000
+		outline: 1px solid #c89f2d
+	&::placeholder
+		color: #7c7c7c
+
+.button--submit
+	margin-right: auto
+	margin-left: auto
+	padding: 0 60px
+	height: 36px
+	display: inline-block
+	color: #fff
+	border: none
+	outline: none
+	background-color: #c89f2d
+	font-family: 'Open Sans', sans-serif
+	font-size: 16px
+	font-weight: 400
+	transition: .4s
+	&:hover
+		background-color: darken(#c89f2d, 10%)
+	&:active
+		background-color: lighten(#c89f2d, 10%)

@@ -1,0 +1,6 @@
+mixin menu-card(title, desc, price, itemClass)
+	.menu-item(class=" " + itemClass)
+		.menu-item__top
+			.menu-item__title #{title}
+			.menu-item__price $#{price}
+		.menu-item__desc #{desc}

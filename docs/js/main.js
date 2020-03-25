@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	AOS.init();
 
 	$(window).scroll(function() {
 		var height = $(window).scrollTop();

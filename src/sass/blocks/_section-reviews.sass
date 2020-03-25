@@ -9,13 +9,16 @@
 	margin-right: auto
 	margin-bottom: 20px
 	margin-left: auto
-	padding-top: 76px
-	padding-right: 64px
-	padding-bottom: 102px
-	padding-left: 64px
+	padding: 20px
 	width: 100%
-	max-width: 770px
+	max-width: 550px
 	background-color: rgba(0, 0, 0, 0.8)
+	@media (min-width: 1200px)
+		padding-top: 76px
+		padding-right: 64px
+		padding-bottom: 102px
+		padding-left: 64px
+		max-width: 770px
 
 .review__title
 	margin-bottom: 58px
@@ -36,18 +39,21 @@
 	text-align: center
 	color: #dde0df
 	font-family: 'Gentium Book Basic', serif
-	font-size: 25px
+	font-size: 18px
 	font-weight: 700
-	line-height: 45px
-	&:before
-		width: 32px
-		height: 25px
-		position: absolute
-		top: 0
-		left: 0
-		content: ""
-		transform: translate(-100%, -25%)
-		background-image: url("../img/quote.png")
+	line-height: 1.2
+	@media (min-width: 1200px)
+		font-size: 25px
+		line-height: 45px
+		&:before
+			width: 32px
+			height: 25px
+			position: absolute
+			top: 0
+			left: 0
+			content: ""
+			transform: translate(-100%, -25%)
+			background-image: url("../img/quote.png")
 
 .review__signature
 	text-align: center
@@ -60,6 +66,7 @@
 	margin-right: auto
 	margin-left: auto
 	width: 80px
+	text-align: center
 
 .owl-carousel button.owl-dot
 	margin-right: 5px

@@ -6,14 +6,18 @@
 	background-size: cover
 
 .ingredients-content
-	margin-right: 40px
+	margin-right: auto
 	margin-left: auto
-	padding-top: 76px
-	padding-right: 72px
-	padding-bottom: 78px
-	padding-left: 72px
-	max-width: 570px
+	padding: 20px
+	max-width: 550px
 	background-color: rgba(0, 0, 0, 0.67)
+	@media (min-width: 1200px)
+		margin-right: 40px
+		margin-left: auto
+		padding-top: 76px
+		padding-right: 72px
+		padding-bottom: 78px
+		padding-left: 72px
 
 .ingredients-content__title
 	margin-bottom: 63px
@@ -41,3 +45,14 @@
 .ingredients-content-images
 	display: flex
 	justify-content: space-around
+	img
+		width: 30%
+		height: 30%
+	@media (min-width: 768px)
+		img
+			width: 25%
+			height: 25%
+	@media (min-width: 1200px)
+		img
+			width: 100%
+			height: 100%

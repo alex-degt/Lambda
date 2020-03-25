@@ -4,12 +4,24 @@
 	background-color: #000
 
 .footer-wrap
-	max-width: 1100px
+	margin-right: auto
+	margin-left: auto
+	max-width: 550px
 	display: flex
-	justify-content: space-between
+	flex-direction: column
+	@media (min-width: 768px)
+		max-width: 1100px
+		flex-direction: row
+		justify-content: space-between
 
 .footer-about
-	max-width: 370px
+	margin-bottom: 30px
+	@media (min-width: 768px)
+		width: 50%
+	@media (min-width: 1200px)
+		margin-bottom: 0
+		width: auto
+		max-width: 370px
 
 .footer__title
 	margin-bottom: 54px
@@ -37,10 +49,13 @@
 		line-height: 24px
 
 .footer-hours
-	max-width: 230px
+	margin-bottom: 30px
+	@media (min-width: 1200px)
+		margin-bottom: 0
+		max-width: 230px
 
 .footer-hours__content
-	margin-bottom: 40px
+	margin-bottom: 0
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
@@ -50,6 +65,8 @@
 	font-size: 16px
 	font-weight: 400
 	line-height: 24px
+	@media (min-width: 768px)
+		margin-bottom: 40px
 
 .footer-hours__content-days
 	width: 50%
@@ -59,7 +76,8 @@
 	width: 50%
 
 .footer-location
-	max-width: 230px
+	@media (min-width: 1200px)
+		max-width: 230px
 
 .footer-location__content
 	margin-bottom: 35px
@@ -71,11 +89,14 @@
 	line-height: 24px
 
 .footer-hours__badges
-	display: flex
-	justify-content: center
-	color: #fff
-	font-size: 20px
-	
+	display: none
+	@media (min-width: 768px)
+		display: block
+		display: flex
+		justify-content: center
+		color: #fff
+		font-size: 20px
+
 .footer-hours__badges--visa,
 .footer-hours__badges--paypal,
 .footer-hours__badges--mc

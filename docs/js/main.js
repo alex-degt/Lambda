@@ -1,4 +1,14 @@
 $(document).ready(function() {
+
+	$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		if (height > 750) {
+			$(".nav-wrap").addClass("nav-wrap--fixed");
+		} else {
+			$(".nav-wrap").removeClass("nav-wrap--fixed");
+		}
+	});
+
 	// Nav
 	$("#page-nav").onePageNav({
 		currentClass: "nav-menu-item--active",
